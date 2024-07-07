@@ -1,13 +1,13 @@
 """Delimeter-characters parser"""
 
-def check_delimeters(delimeters):
+def check_delimeters(delimeters: str) -> str | None:
     """Checkes delimeter-characters correctness.
 
     Args:
         delimeters: String containing delimeter characters.
 
     Returns:
-        String with message about correctness (symmetry) of delimiter characters.
+        String with message about correctness (symmetry) of delimiter characters or None if empty string input.
     """
     if not delimeters or not isinstance(delimeters, str):
         return None
